@@ -1,4 +1,7 @@
-* { font-family: system-ui; }
+* { 
+	font-family: system-ui;
+	transition: 400ms all;
+}
 
 *::selection {
 	background-color: #fff3;
@@ -45,4 +48,27 @@ h1 {
 	font-weight: bold;
 	font-size: 40px;
 	text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+	h1 {
+		letter-spacing: 10px;
+		font-size: 50px;
+	}
+
+	#bio {
+		width: 90%;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	h1 {
+		letter-spacing: 25px;
+		font-size: 60px;
+	}
+
+	#bio {
+		width: 80%;
+	}
 }
